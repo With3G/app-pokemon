@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Favoritos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size-xs="4" *ngFor="let f of arrayFav">
+        <ion-img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/{{f}}.png"></ion-img>
+        <!-- Creamos un boton con la ruta de estadisticas y el id de pokedex obtenido del array -->
+        <ion-button size="small" href="/tabs/(estadisticas/{{f}})">Info</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
